@@ -7,7 +7,7 @@ arrhenius_eqn <- function(E_a,   # activation energy of metabolic processes, uni
   euler <- exp(1)  # Euler's number
   k <- 8.6173303 * 10^(-5) # Boltzmann constant, units = eV (electron volt)
   
-  euler^(-E_a/k*T)
+  euler^(-E_a/(k*T))
 }
 
 arrhenius_eqn(E_a = 0.65, T = C_to_K(20))
